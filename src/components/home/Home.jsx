@@ -27,12 +27,7 @@ function Home() {
   return (
     <>
     <div className="container">
-        <div className="row">
-            <div className="col">
-                <h1>Skaičiuotuvas</h1>
-            </div>
-        </div>
-        <div className="row flex-column flex-md-row">
+        <div className="row flex-column flex-md-row mt-3">
             <div className="col-12 col-md-5 mb-3 mb-md-0">
                 <Calculator onSave={handleSave} deleteAll={() => handleDeleteAll()}/>
             </div>
