@@ -40,28 +40,31 @@ function Calculator(props) {
             <div className="card-body">
                 <form onSubmit={submitHandler}>
                     <div className="form-group">
-                        <label>Pavadinimas:</label>
+                        <label for="productName">Pavadinimas:</label>
                         <input className="form-control mb-3" 
                         onChange={handleChange}
                         name='productName'
+                        id='productName'
                         type="text" 
                         placeholder="Pavadinimas" 
                         value={formData.productName}/>
                     </div>
                     <div className="form-group">
-                        <label>Vienetai:</label>
+                        <label for="productQuantity">Vienetai:</label>
                         <input className="form-control mb-3"
                         onChange={handleChange}
                         name='productQuantity'
+                        id='productQuantity'
                         type="number" 
                         placeholder="Vienetai"
                         value={formData.productQuantity}/>
                     </div>
                     <div className="form-group">
-                        <label>Vienetų kiekis dėžėje:</label>
+                        <label for="boxQuantity">Vienetų kiekis dėžėje:</label>
                         <input className="form-control mb-3"
                         onChange={handleChange}
-                        name='boxQuantity' 
+                        name='boxQuantity'
+                        id='boxQuantity' 
                         type="number" 
                         placeholder="Vienetų kiekis dėžėje"
                         value={formData.boxQuantity}/>

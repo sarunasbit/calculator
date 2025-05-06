@@ -20,7 +20,7 @@ function Home() {
     }
 
     const handleDeleteAll = () => {
-        toast.success('Įrašai sėkmingai ištrinti')
+        tableItem.length != 0 ? toast.success('Įrašai sėkmingai ištrinti') : toast.error("Įrašų nėra.") 
         setTableItem([])
     }
 
